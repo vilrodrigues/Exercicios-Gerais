@@ -1,0 +1,31 @@
+<script src='01.js'></script>
+<script>
+
+var linhas = 2,
+    colunas = 2,
+    matrizVaz = [],
+    matrizPrincipal = [],
+    matrizMult = [],
+    maiorElemento = '0';
+    
+    matrizVaz = matrizVazia(linhas,colunas);
+    
+alert("Matriz 2x2");
+      
+    matrizPrincipal = preencheMatriz(matrizVaz,linhas,colunas);
+    
+document.write("Matriz original:<br><br>");
+    
+    mostraMatriz(linhas,colunas,matrizPrincipal);
+    
+    maiorElemento = encontraMaior(matrizPrincipal,linhas,colunas);
+    
+alert("Maior elemento "+maiorElemento);
+    
+    matrizMult = multMatriz(matrizVaz,linhas,colunas,matrizPrincipal,maiorElemento);
+
+document.write("<br>Matriz multiplicada pelo maior elemento:<br><br>");
+
+    mostraMatriz(linhas,colunas,matrizMult);    
+
+</script>

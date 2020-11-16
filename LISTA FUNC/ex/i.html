@@ -1,0 +1,49 @@
+<script src="func2.js"></script>
+<script>
+
+var i = 0,
+    num = 0,
+    somador = 0,
+    somador2 = 0,
+    soma = 0,
+    media = 0;
+    
+document.write("Exercicio Teste <br><br> Relatório dos números: <br><br> A: Pares ou Impares: <br><br>");
+    
+for(i = 1; i <= 10; i++){
+    num = Number(prompt("Informe um numero: "));
+        alert("Digite um numero válido");
+    
+    
+    while ((isNaN(num)) || (num == 0))
+        num = Number(prompt("Informe um numero: "));
+    
+    parImpar(num);
+    totalPares(num);
+    totalImpares(num);
+    somaTodos(num);
+    maiorN(num);
+    menorN(num);
+}
+document.write("<br> B: Total de pares: "+somador);
+document.write("<br> C: Total de impares: "+somador2);
+document.write("<br> D: Soma: "+soma);
+document.write("<br> E: Media: "+mediaTodos(soma));
+document.write("<br> F: Maior: "+maior);
+document.write("<br> G: Menor: "+menor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

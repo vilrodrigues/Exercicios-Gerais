@@ -1,0 +1,24 @@
+<script src='03.js'></script>
+<script>
+
+var linhas = 4,
+    colunas = 5,
+    matrizVaz = [],
+    matrizPrincipal = [],
+    soma = 0;
+
+matrizVaz = matrizVazia(linhas,colunas);
+
+alert("Matriz 4x5");
+
+matrizPrincipal = preencheMatriz(matrizVaz,linhas,colunas);
+    
+document.write("Matriz original:<br><br>");
+
+mostraMatriz(linhas,colunas,matrizPrincipal);
+
+soma = somaMatriz(linhas,colunas,matrizPrincipal);
+    
+document.write("<br><br>A soma de todos os elementos da matriz é: "+soma);
+
+</script>

@@ -1,0 +1,16 @@
+<script src="func.js"></script>
+<script>
+
+var ano = Number(prompt("Informe um ano"));
+
+while (isNaN(ano) || (ano < 1930 )) {
+    alert("Informe um ano válido, maior que 1930(primeira copa)");
+
+    var ano = Number(prompt("Informe um ano"));
+}
+
+for (i = 1930; i <= ano; i++){
+    calculaCopas();
+}
+
+</script>

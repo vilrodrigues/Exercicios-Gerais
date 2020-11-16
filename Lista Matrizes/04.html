@@ -1,0 +1,43 @@
+<script src='04.js'></script>
+<script>
+
+var linhas = 3,
+    colunas = 3,
+    matrizVaz = [],
+    matrizPrincipal = [],
+    nBusca = 0;
+
+    matrizVaz = matrizVazia(linhas,colunas);
+    
+alert("Matriz 3x3");
+      
+    matrizPrincipal = preencheMatriz(matrizVaz,linhas,colunas);
+    
+document.write("Matriz original:<br><br>");
+    
+    mostraMatriz(linhas,colunas,matrizPrincipal);
+    
+nBusca = prompt("Qual numero quer buscar?");
+    
+buscaMatriz(linhas,colunas,matrizPrincipal,nBusca);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

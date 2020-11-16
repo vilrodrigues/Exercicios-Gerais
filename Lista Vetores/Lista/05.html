@@ -1,0 +1,55 @@
+<script src = "05.js"></script>
+<script>
+
+var vet1 = [],
+    vet2 = [],
+    vetSoma = [],
+    vetProduto = [],
+    vetTodos = [],
+    vetUniao = [],
+    vetDif = [];
+    
+alert("Vetor 1");
+vet1 = preencheVet();
+alert("Vetor 2");
+vet2 = preencheVet();
+    
+document.write("Vetor 1: ["+vet1+"]");
+document.write("<br>Vetor 2: ["+vet2+"]<br>");
+           
+vetSoma = somaVet(vet1,vet2);
+vetProduto = ProdutoVet(vet1,vet2);
+    
+document.write("<br>Soma: ["+vetSoma+"]");
+document.write("<br>Produto: ["+vetProduto+"]");
+    
+vetUniao = uniVet(vet1,vet2);
+
+document.write("<br>Uniao: ["+vetUniao+"]");
+    
+vetDif = difVet(vet1,vet2);
+    
+document.write("<br>Diferença: ["+vetDif+"]");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

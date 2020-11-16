@@ -1,0 +1,25 @@
+<script src="01.js"></script>
+<script>
+
+var estoqueAnterior = [],
+    valorProdutos = [],
+    vendasProdutos = [],
+    relatorioProdutos = [];
+    
+document.write("ESTOQUE ANTERIOR: <br><br>");
+
+estoqueAnterior = estAnterior();
+
+document.write("<br> VALORES: <br><br>");
+    
+valorProdutos = valorProd();
+
+document.write("<br> VENDAS: <br><br>");
+    
+vendasProdutos = vendasProd();
+
+document.write("<br> RELATORIO: <br><br>");
+
+relatorioProdutos = relatorioProd(vendasProdutos,valorProdutos,estoqueAnterior);
+
+</script>
